@@ -90,14 +90,20 @@
 }
 
 .home .about-image {
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    height: 322px;
-    border-radius: 12px;
-    background-image: url(./img/about-image.svg);
-    background-size: cover;
-    background-position: 50% 50%;
+    background-image: url('headshot.jpg');
+    background-size: cover;        /* Makes the image cover the whole div */
+    background-position: center;   /* Centers the image */
+    width: 100%;                   /* Full width of the container */
+    max-width: 560px;              /* Sets a maximum width */
+    aspect-ratio: 1 / 1;           /* Maintains a square shape */
+    border-radius: 12px;           /* Adds rounded corners */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .home .about-image {
+        max-width: 150px;          /* Reduces the width for smaller screens */
+    }
 }
 
 .home .about-content {
