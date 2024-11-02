@@ -13,7 +13,6 @@
     background-size: cover;        /* Makes the image cover the whole div */
     background-position: center;   /* Centers the image */
     width: 100%;                   /* Full width of the container */
-    height: auto;
     maximum-height: 256px;             
     aspect-ratio: 2 / 1;  
 }
