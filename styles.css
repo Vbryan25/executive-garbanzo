@@ -23,7 +23,6 @@
     width: 1512px;
     height: fit-content;
     align-items: center;
-    margin-top: 88px; /* Adds 88px of space above */
     margin-bottom: 88px; /* Adds 88px of space below */
     position: relative;
     flex: 0 0 auto;
