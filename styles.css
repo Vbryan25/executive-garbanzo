@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     width: 1512px;
-    height: fit-content;
+    height: 100%;
     align-items: center;
     margin-bottom: 88px; /* Adds 88px of space below */
     position: relative;
