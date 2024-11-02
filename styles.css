@@ -24,7 +24,8 @@
     width: 1512px;
     height: fit-content;
     align-items: center;
-    gap: 40px;
+    margin-top: 88px; /* Adds 88px of space above */
+    margin-bottom: 88px; /* Adds 88px of space below */
     padding: 0px 24px;
     position: relative;
     flex: 0 0 auto;
