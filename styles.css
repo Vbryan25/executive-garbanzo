@@ -154,7 +154,7 @@
 /* Hover effect */
 .element .about-card:hover {
     transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
 
 .element .kitchen-card {
