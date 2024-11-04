@@ -151,6 +151,12 @@
     white-space: nowrap;
 }
 
+/* Hover effect */
+.element .about-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
 .element .kitchen-card {
     display: flex;
     flex-direction: column;
