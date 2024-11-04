@@ -158,7 +158,10 @@
 }
 
 .element .kitchen-card {
-    display: flex;
+    display: block; /* Makes the entire tile clickable */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherit text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
     flex-direction: column;
     minimum-width: 300px;
 	maximum-width: 474px;
