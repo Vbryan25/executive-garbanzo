@@ -284,3 +284,22 @@
     border-radius: 16px;
     overflow: hidden;
 }
+
+/* Grid layout rules for responsiveness */
+@media (min-width: 1090px) {
+    .element .body {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    }
+}
+
+@media (max-width: 1090px) and (min-width: 744px) {
+    .element .body {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 744px) {
+    .element .body {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
