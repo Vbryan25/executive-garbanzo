@@ -1,292 +1,123 @@
-.home {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 88px;
-    position: relative;
-    background-color: #ffffff;
-    margin: 0 auto;
-}
-
-.home .banner {
-    background-image: url('banner-image.jpg');
-    background-size: cover;        /* Makes the image cover the whole div */
-    background-position: center;   /* Centers the image */
-    height: 200px;
-    width: 100%;                   /* Full width of the container */
-    maximum-height: 256px;             
-    aspect-ratio: 2 / 1;  
-}
-
-.home .about {
+.element {
     display: flex;
     flex-direction: column;
-    width: 1512px;
-    height: 100%;
-    align-items: center;
-    margin-bottom: 88px; /* Adds 88px of space below */
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .heading {
-    min-width: 800px;
-    height: 92px;
-    display: flex;
-    flex-direction: column;
-    max-width: 1352px;
+    width: 1440px;
+    height: 1024px;
     align-items: flex-start;
-    gap: 24px;
+    gap: 8px;
+    padding: 32px;
+    position: relative;
+    background-color: #e5e8ff;
+}
+
+.element .body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px 24px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.element .about-card {
+    display: flex;
+    flex-direction: column;
+    width: 443px;
+    height: 468px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('about-cover.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.element .about-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     position: relative;
     align-self: stretch;
     width: 100%;
+    flex: 0 0 auto;
 }
 
-.home .h {
-    display: inline-flex;
+.element .icon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url('headshot.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.element .nametitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.element .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #282828;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element .div {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #666666;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element .card-footer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
     position: relative;
-    flex: 0 0 auto;
-}
-
-.home .text-wrapper {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #282828;
-    font-size: 56px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .ellipse {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    background-color: #ffd44d;
-    border-radius: 8px;
-}
-
-.home .separtor {
-    margin-bottom: -17px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 2px;
-}
-
-.home .about-details {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 800px;
-    max-width: 1352px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 48px 48px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-}
-
-.home .about-image {
-    background-image: url('headshot.jpg');
-    background-size: cover;        /* Makes the image cover the whole div */
-    background-position: center;   /* Centers the image */
-    width: 100%;                   /* Full width of the container */
-    max-width: 560px;              /* Sets a maximum width */
-    aspect-ratio: 4 / 3;           /* Maintains a rectangle shape */
-    border-radius: 12px;           /* Adds rounded corners */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    .home .about-image {
-        max-width: 150px;          /* Reduces the width for smaller screens */
-    }
-}
-
-.home .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-}
-
-.home .about-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height:fit-content
-}
-
-.home .div {
-    position: relative;
-    width: fit-content;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #282828;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: 100%;
-    height: fit-content;
-}
-
-.home .p {
-    position: relative;
-    align-self: stretch;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #424242;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-}
-
-.home .about-tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 8px 4px;
-    position: relative;
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
 }
 
-.home .tag {
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .div-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 4px 12px;
-    background-color: #e0e0e0;
-    border-radius: 999px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .text-wrapper-2 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #424242;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .div-2 {
-    display: flex;
-    flex-direction: column;
-    width: 1512px;
-    align-items: center;
-    gap: 40px;
-    padding: 0px 32px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .div-3 {
-    flex-direction: column;
-    gap: 24px;
-    display: flex;
-    max-width: 1352px;
-    align-items: flex-start;
+.element .separator {
+    margin-top: -0.50px;
     position: relative;
     align-self: stretch;
     width: 100%;
-    flex: 0 0 auto;
-}
-
-.home .text-wrapper-3 {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #282828;
-    font-size: 56px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .img {
-    margin-bottom: -1px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 2px;
-}
-
-.home .projects {
-    flex-wrap: wrap;
-    gap: 56px 58px;
-    display: flex;
-    max-width: 1352px;
-    align-items: flex-start;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-}
-
-.home .project-tile {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    height: 335px;
-    align-items: flex-start;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: #0000001a;
-}
-
-.home .project-image {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 232px;
+    height: 1px;
     object-fit: cover;
 }
 
-.home .project-details {
+.element .about-details {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 12px;
-    padding: 16px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    background-color: #f0f0f0;
-}
-
-.home .project-heading {
-    display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     position: relative;
     align-self: stretch;
@@ -294,265 +125,53 @@
     flex: 0 0 auto;
 }
 
-.home .text-wrapper-4 {
+.element .text-wrapper-2 {
     position: relative;
     width: fit-content;
-    margin-top: -1px;
+    margin-top: -1.00px;
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
-    color: #666666;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px 4px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-}
-
-.home .tag-2 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 4px 12px;
-    background-color: #d6d6d6;
-    border-radius: 999px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .text-wrapper-5 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #282828;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .project-image-2 {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 232px;
-    background-image: url(./img/project-image.png);
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.home .project-details-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 16px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    background-color: #f0f0f0;
-}
-
-.home .project-tags-2 {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .project-image-3 {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 232px;
-    background-image: url(./img/image.png);
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.home .project-image-4 {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 232px;
-    background-image: url(./img/project-image-2.png);
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.home .project-heading-2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px 12px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-}
-
-.home .project-image-5 {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 232px;
-    background-image: url(./img/project-image-3.png);
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.home .testimonial {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-}
-
-.home .rectangle {
-    position: relative;
-    width: 96px;
-    height: 96px;
-    background-color: #d9d9d9;
-    border-radius: 4px;
-}
-
-.home .frame {
-    flex-direction: column;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .quote {
-    width: 1100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    padding: 8px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #f0f0f0;
-    border-radius: 999px;
-}
-
-.home .text-wrapper-6 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
     color: #000000;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 16px;
+    white-space: nowrap;
 }
 
-.home .text-wrapper-7 {
+.element .text-wrapper-3 {
     position: relative;
-    flex: 1;
+    width: fit-content;
+    margin-top: -1.00px;
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
-    color: #282828;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .frame-2 {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.home .text-wrapper-8 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Italic", Helvetica;
-    font-weight: 400;
-    font-style: italic;
     color: #666666;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-    text-decoration: underline;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 16px;
+    white-space: nowrap;
 }
 
-.home .text-wrapper-9 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Italic", Helvetica;
-    font-weight: 400;
-    font-style: italic;
-    color: #666666;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .quote-2 {
-    width: 685px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    padding: 8px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #f0f0f0;
-    border-radius: 999px;
-}
-
-.home .quote-3 {
-    width: 761px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    padding: 8px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #f0f0f0;
-    border-radius: 999px;
-}
-
-.home .getintouch {
+.element .kitchen-card {
     display: flex;
     flex-direction: column;
-    width: 1512px;
+    width: 442px;
+    height: 468px;
     align-items: center;
+    justify-content: flex-end;
     gap: 24px;
-    padding: 0px 24px;
+    padding: 28px;
     position: relative;
-    flex: 0 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('kitchen-cover.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.home .contact-details {
+.element .card-footer-2 {
     display: flex;
-    max-width: 1352px;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
     position: relative;
     align-self: stretch;
@@ -560,56 +179,99 @@
     flex: 0 0 auto;
 }
 
-.home .div-4 {
-    display: inline-flex;
+.element .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element .img {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    object-fit: cover;
+}
+
+.element .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element .hydra-card {
+    display: flex;
+    flex-direction: column;
+    width: 443px;
+    height: 468px;
     align-items: center;
-    gap: 8px;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 28px;
     position: relative;
-    flex: 0 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('hydra-cover.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.home .img-2 {
+.element .personal-card {
+    display: flex;
+    flex-direction: column;
+    width: 443px;
+    height: 468px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 28px;
     position: relative;
-    width: 24px;
-    height: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('personal-cover.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.home .bryanvictoria {
+.element .aichecker-card {
+    display: flex;
+    flex-direction: column;
+    width: 442px;
+    height: 468px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 28px;
     position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #282828;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-    background: transparent;
-    border: none;
-    padding: 0;
+    background-color: #3ebe5c;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-.home .logo {
+.element .system-card {
+    display: flex;
+    flex-direction: column;
+    width: 443px;
+    height: 468px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 28px;
     position: relative;
-    width: 20px;
-    height: 20px;
-}
-
-.home .text-wrapper-10 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Regular", Helvetica;
-    font-weight: 400;
-    color: #282828;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.home .footer {
-    position: relative;
-    width: 1512px;
-    height: 94px;
-    background-color: #d8d8d8;
+    background-color: #7888ff;
+    border-radius: 16px;
+    overflow: hidden;
 }
